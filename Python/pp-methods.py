@@ -1,72 +1,58 @@
 # 1. Write a program that asks the user to enter a word, then prints that word with all capital letters.
 
-p "Please enter a word:"
-word = gets.chomp()
-p word.upcase
+word = input("Please enter a word: ")
+print(word.upper())
 
 # 2. Write a program that asks the user to enter a number, then prints "That's a big number" if the number is greater than 100.
 
-p "Please enter a number:"
-number = gets.chomp().to_i
-if number > 100
-  p "That's a big number"
-end
+num = int(input("Please enter a number: "))
+if num > 100:
+    print("That's a big number")
 
 # 3. Write a program that asks the user to enter two numbers, then prints the numbers added together.
 
-p "Please enter two numbers seperated by the enter key:"
-num1 = gets.chomp().to_i
-num2 = gets.chomp().to_i
+num1 = int(input("Please enter a number: "))
+num2 = int(input("Please enter a second number: "))
 
-p num1 + num2
+print(num1 + num2)
 
 # 4. Write a program that asks the user to enter a word, then prints that word in reverse order.
 
-p "Please enter a word:"
-word = gets.chomp()
-p word.reverse
+word = input("Please enter a word: ")
+print(word[::-1])
 
 # 5. Write a program that asks the user to enter a number, then prints the number times 10.
 
-p "Please enter a number:"
-num = gets.chomp()
-p num * 10
+num = int(input("Please enter a number: "))
+print(num*10)
 
 # 6. Write a program that asks the user to enter two words, then prints both words on the same line in all capital letters.
 
-p "Please enter two words seperated by the enter key:"
-word1 = gets.chomp()
-word2 = gets.chomp()
+word1 = input("Please enter a word: ")
+word2 = input("Please enter a second word: ")
 
-p word1.upcase + " " + word2.upcase
+print(word1.upper() + " " + word2.upper())
 
 # 7. Write a program that asks the user to enter a word, then prints the number of letters in the word.
 
-p "Please enter a word:"
-word = gets.chomp()
-p word.length
+word = input("Please enter a word: ")
+print(len(word))
 
 # 8. Write a program that asks the user to enter a number, then prints "That's a negative number" if the number is less than 0.
 
-p "Please enter a number:"
-num = gets.chomp().to_i
-if num < 0
-  p "That's a negative number"
-end
+num = int(input("Please enter a number: "))
+if num < 0:
+    print("That is a negative number")
 
 # 9. Write a program that asks the user to enter two numbers, then prints the two numbers multiplied together.
 
-p "Please enter two numbers seperated by the enter key:"
-num1 = gets.chomp.to_i
-num2 = gets.chomp.to_i
+num1 = int(input("Please enter a number: "))
+num2 = int(input("Please enter a second number: "))
 
-p num1 * num2
+print(num1*num2)
 
 # 10. Write a program that asks the user to enter a word, then prints "That's a long word" if the word has more than 5 letters.
 
-p "Please enter a word:"
-word = gets.chomp()
-
-if word.length > 5
-  p "That's a long word"
-end
+word = input("Please enter a word: ")
+if len(word) > 5:
+    print("That is a long word")
